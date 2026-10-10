@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+<style>
+    @font-face {
+        font-family: Candara;
+        src: url("Candara.ttf");
+    } h1 {
+        text-align: center;
+        font-weight: normal;
+    } form {
+        width: 600px;
+        min-height: 800px;
+        padding: 24px;
+        background: lavender;
+        margin: 36px auto;
+        border: 1px solid blue;
+        box-shadow: 2px 3px 6px indigo;
+        border-radius: 18px;
+        font: 14pt/1.2em Candara;
+	} input[type="text"] {
+		background: white;
+		font: 14pt/1.4em Candara;
+		width: 100%;
+		border: 1pt solid gray;
+	} input:focus {
+		background: lavender
+    } fieldset {
+        margin-top: 18px;
+    } #personal input, #submit {
+        width: 100%;
+        height: 24px;
+        margin-bottom: 12px;
+	} select {
+		width: 50%;
+		font: 14pt/1.4em;
+		padding: 2px 4px;
+	} textarea {
+		width: 100%
+	} input[type="submit"] {
+		width: 100px;
+		height: 40px;
+		background: lightblue;
+		display: block;
+		margin: 0 auto;
+	} input[type="media"] {
+		margin: 5pt 5pt
+	}
+</style>
+</head>
+
+<body>
+    <form action="#" method="post">
+    <h1>Contact Us</h1>
+	<label>First name</label>
+	<input type="text" name="name" value="">
+	<label>Middle name</label>
+	<input type="text" name="name" value="">
+	<label>Last name</label>
+	<input type="text" name="name" value="">
+	<br/><br/>
+	<label>Email</label>
+	<input type="media" name="email" value="">
+	<label>Phone number</label>
+	<input type="media" name="email" value=""><br/>
+	<label>Social media</label>
+	<input type="media" name="email" value="">
+	<br/><br/>
+	<select>
+		<option>When can you start working?</option>	
+		<option>ASAP</option>
+		<option>Next month</option>
+		<option>Next 3 months</option>
+		<option>Next 6 months</option>
+		<option>Next year</option>
+	</select>
+	<br/>
+	<fieldset><legend>How can we contact you if needed?</legend>
+	<input type="radio" name="os" /> Cell phone (Call)<br/>
+	<input type="radio" name="os" /> Cell phone (Text)<br/>
+	<input type="radio" name="os" /> Email<br/>
+	<input type="radio" name="os" /> Social media<br/>
+		</fieldset>
+	<br/>	
+	<fieldset><legend>How did you find us?</legend>
+
+	<input type="checkbox" onClick="toggle(this)" /> Facebook<br/>
+	<input type="checkbox" name="foo" value="bar1"> Twitter/X<br/>
+	<input type="checkbox" name="foo" value="bar2"> Instagram<br/>
+	<input type="checkbox" name="foo" value="bar3"> Ticktock<br/>
+	<input type="checkbox" name="foo" value="bar4"> Other<br/>
+	<textarea>
+	</textarea>
+	</fieldset>
+	<br/>
+	<br/>
+	<input type="submit" value="Submit" />
+		
+		
+    </form>
+</body>
+</html>
